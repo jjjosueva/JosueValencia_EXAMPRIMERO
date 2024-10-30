@@ -11,20 +11,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
     <style>
-        /* Fondo general con tono cálido */
+       
         body {
-            background-color: #F9E2AE; /* Fondo amarillo claro */
+            background-color: #F9E2AE; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #333;
             margin: 0;
             display: flex;
-            justify-content: flex-start; /* Alineación superior */
+            justify-content: flex-start; 
             align-items: center;
             flex-direction: column;
-            padding-top: 0; /* Espacio superior mínimo */
-        }
+            padding-top: 0; 
 
-        /* Contenedor principal */
+        
         .container {
             text-align: center;
             padding: 20px;
@@ -34,14 +33,14 @@
 
         h1 {
             font-size: 2.5rem;
-            color: #264653; /* Azul verdoso oscuro */
+            color: #264653; 
             margin-bottom: 20px;
             font-weight: bold;
         }
 
-        /* Botón Crear Nuevo */
+        
         .create-link {
-            background-color: #E76F51; /* Color rojo anaranjado */
+            background-color: #E76F51; 
             color: #FFFFFF;
             padding: 10px 20px;
             border-radius: 5px;
@@ -53,10 +52,10 @@
         }
 
             .create-link:hover {
-                background-color: #F4A261; /* Color de hover en naranja */
+                background-color: #F4A261; 
             }
 
-        /* Tabla de datos */
+       
         .table-container {
             margin-top: 20px;
             overflow-x: auto;
@@ -67,7 +66,7 @@
         .table {
             width: 100%;
             border-collapse: collapse;
-            background-color: #264653; /* Fondo azul verdoso */
+            background-color: #264653; 
             border-radius: 5px;
             overflow: hidden;
         }
@@ -79,17 +78,17 @@
             }
 
             .table th {
-                background-color: #2A9D8F; /* Fondo azul verdoso más claro para encabezados */
+                background-color: #2A9D8F; 
                 text-transform: uppercase;
                 font-size: 0.9rem;
             }
 
             .table tr:nth-child(even) {
-                background-color: #3D5A80; /* Alterna filas en azul grisáceo */
+                background-color: #3D5A80; 
             }
 
             .table tr:hover {
-                background-color: #457B9D; /* Efecto hover */
+                background-color: #457B9D; 
             }
 
         .actions a {
@@ -103,7 +102,7 @@
                 color: #E76F51;
             }
 
-        /* Estilo de pie de página */
+       
         footer {
             font-size: 0.9rem;
             color: #555;
@@ -126,14 +125,14 @@
 </head>
 <body>
 
-    <!-- Contenido principal alineado hacia la parte superior -->
+   
     <div class="container">
         <h1>Bienvenido a mi Examen Programación JV - Celulares</h1>
 
-        <!-- Botón Crear Nuevo -->
+        
         <a class="create-link" asp-action="Create">Crear Nuevo</a>
 
-        <!-- Tabla de datos -->
+      
         <div class="table-container">
             <table class="table">
                 <thead>
@@ -164,7 +163,7 @@
         </div>
     </div>
 
-    <!-- Pie de página -->
+    
     <footer>
         © 2024 - JosueValencia_EXAMPRIMERO - <a href="#">Privacy</a>
     </footer>
