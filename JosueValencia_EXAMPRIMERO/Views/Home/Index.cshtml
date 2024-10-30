@@ -9,19 +9,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
     <style>
+        /* Fondo general con tono cálido */
         body {
-            background-color: #E8F4F2; 
-            color: #333; 
-            font-family: Arial, sans-serif;
+            background-color: #F9E2AE; /* Fondo amarillo claro */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            margin: 0;
+            display: flex;
+            justify-content: flex-start; /* Alineación hacia arriba */
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 20px; /* Espacio mínimo en la parte superior */
         }
 
-        .text-center {
-            color: #444; 
+        /* Contenedor principal */
+        .container {
+            padding: 30px;
+            background-color: #FFFFFF; /* Fondo blanco */
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            margin: 0; /* Sin margen superior */
         }
 
         h1.display-4 {
-            font-size: 3rem;
-            color: #FF6F61; 
+            font-size: 2.5rem;
+            color: #264653; /* Azul verdoso oscuro */
+            margin-bottom: 20px;
+            font-weight: bold;
         }
 
         p {
@@ -29,29 +47,60 @@
             color: #666;
         }
 
-        a {
-            color: #FF6F61; 
+        /* Botón Crear Nuevo */
+        .create-link {
+            background-color: #E76F51; /* Color rojo anaranjado */
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border-radius: 5px;
             text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+            transition: background-color 0.3s;
         }
 
-            a:hover {
-                color: #FF8566; 
+            .create-link:hover {
+                background-color: #F4A261; /* Color de hover en naranja */
             }
 
-        .container {
-            padding: 20px;
-            background-color: #FFFFFF; 
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+        /* Pie de página */
+        footer {
+            font-size: 0.9rem;
+            color: #FFFFFF;
+            padding: 10px;
+            background-color: #E76F51; /* Color rojo anaranjado */
+            width: 100%;
+            text-align: center;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
         }
+
+            footer a {
+                color: #F4E1C1; /* Color claro para enlaces en el pie */
+                text-decoration: none;
+            }
+
+                footer a:hover {
+                    color: #FF8566;
+                    text-decoration: underline;
+                }
     </style>
 </head>
 <body>
 
+    <!-- Contenido principal centrado en la parte superior -->
     <div class="container text-center">
         <h1 class="display-4">Bienvenido a mi Examen Programación JV</h1>
         <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+        <!-- Botón Crear Nuevo -->
+        <a class="create-link" href="#">Crear Nuevo</a>
     </div>
+
+    <!-- Pie de página -->
+    <footer>
+        © 2024 - JosueValencia_EXAMPRIMERO - <a href="#">Privacy</a>
+    </footer>
 
 </body>
 </html>
