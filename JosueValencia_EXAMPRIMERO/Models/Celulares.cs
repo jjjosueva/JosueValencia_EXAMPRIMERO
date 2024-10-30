@@ -11,7 +11,7 @@ namespace JosueValencia_EXAMPRIMERO.Models
         public string Modelo { get; set; }
 
         [Range(2000, 2024)]
-        public int Amo { get; set; }
+        public int Anio { get; set; }
 
         public float Precio { get; set; }
     }
