@@ -19,13 +19,13 @@ namespace JosueValencia_EXAMPRIMERO.Controllers
             _context = context;
         }
 
-        // GET: Celulares
+        
         public async Task<IActionResult> Index()
         {
             return View(await _context.Celulares.ToListAsync());
         }
 
-        // GET: Celulares/Details/5
+       
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -43,7 +43,7 @@ namespace JosueValencia_EXAMPRIMERO.Controllers
             return View(celulares);
         }
 
-        // GET: Celulares/Create
+        
         public IActionResult Create()
         {
             return View();
@@ -65,7 +65,7 @@ namespace JosueValencia_EXAMPRIMERO.Controllers
             return View(celulares);
         }
 
-        // GET: Celulares/Edit/5
+       
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -116,7 +116,7 @@ namespace JosueValencia_EXAMPRIMERO.Controllers
             return View(celulares);
         }
 
-        // GET: Celulares/Delete/5
+        
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -134,7 +134,7 @@ namespace JosueValencia_EXAMPRIMERO.Controllers
             return View(celulares);
         }
 
-        // POST: Celulares/Delete/5
+       
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

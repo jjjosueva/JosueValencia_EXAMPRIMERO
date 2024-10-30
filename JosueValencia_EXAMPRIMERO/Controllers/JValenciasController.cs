@@ -26,7 +26,7 @@ namespace JosueValencia_EXAMPRIMERO.Controllers
             return View(await josueValencia_EXAMPRIMEROContext.ToListAsync());
         }
 
-        // GET: JValencias/Details/5
+        
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -45,7 +45,7 @@ namespace JosueValencia_EXAMPRIMERO.Controllers
             return View(jValencia);
         }
 
-        // GET: JValencias/Create
+       
         public IActionResult Create()
         {
             ViewData["IdCelular"] = new SelectList(_context.Celulares, "Id", "Id");
@@ -69,7 +69,7 @@ namespace JosueValencia_EXAMPRIMERO.Controllers
             return View(jValencia);
         }
 
-        // GET: JValencias/Edit/5
+        
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -122,7 +122,7 @@ namespace JosueValencia_EXAMPRIMERO.Controllers
             return View(jValencia);
         }
 
-        // GET: JValencias/Delete/5
+       
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -141,7 +141,7 @@ namespace JosueValencia_EXAMPRIMERO.Controllers
             return View(jValencia);
         }
 
-        // POST: JValencias/Delete/5
+        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
